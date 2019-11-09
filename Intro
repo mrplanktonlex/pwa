@@ -1,0 +1,17 @@
+> While native apps have more UX, mobile-web apps have more user base. SO, if we were to convert mobile-web app behavior into native apps-like behavior, then it be a win for us.
+> What is PWAs?
+  -- Progressive web apps. Normal web apps, with "rpogressive enhancement" can be converted into progressive web app. A typical progressive web app, will allow some basic user interaction, even if there is no internet. Once internet comes back on, push notifications can be enabled.
+
+Lets look at some of the features which will make mobile-web apps behve like native-mobile apps
+
+> Installable. They should have an icon on the mobile phone, rather than the user typing the mobile web url
+> Manifest.json
+  - For non-SPA, you have to add below line to all *.html, which translates into a route.
+  - For SPA, you have to add below line only at index.html
+      <link rel="manifest" src="/manifest.json" />
+    manifest.json is typically put at the root of the web files, for eg. for SPA, it is put in the folder where index.html resides.
+> Service Workers. This is major.
+  - Service Workers are vanilla js, which allow to :-
+      >> dynamically cache API responses into indexed DB
+      >> cache management of browser
+      >> push notification. (eg. we add something offline 
