@@ -72,4 +72,13 @@ it will show the chrome version + the standalone version of our app.
 
 ---
 
+though we can "add to home screen" using chrome, it would be nice that when the user visits our site, chrome auto prompts the user
+for an installation. For this, we will have to create a banner 
+[ that pops up at the bottom on chrome (when the user visits our site on the virtual device in android studio) ]
+
+
+
+---
+
+
 
