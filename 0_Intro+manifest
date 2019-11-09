@@ -57,3 +57,13 @@ below are the key-value pairs of this json obj {}
               ]
   
 ---
+PWAs and browser support
+- manifest.json is not supported by many browsers, but dont worry for such old broswers, it will just ignore the manifest.json.
+- Unde dev tools-> Application (this is the part when all PWA-related settings are)
+  > "Manifest": Click this option and it should detect ur manifest.json. This shows most options in the manifest.json
+  > "Service Workers": 
+---
+
+
+
+---
