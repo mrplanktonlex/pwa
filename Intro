@@ -14,4 +14,37 @@ Lets look at some of the features which will make mobile-web apps behve like nat
   - Service Workers are vanilla js, which allow to :-
       >> dynamically cache API responses into indexed DB
       >> cache management of browser
-      >> push notification. (eg. we add something offline 
+      >> push notification. (eg. we add something offline and when internet comes back up, the user is alerted of it).
+      >> background data sync
+      >> background queue management.
+      >> etc.
+      
+---
+
+manifest.json:-
+below are the key-value pairs of this json obj {}
+  > "name" : ""  // used in a splashscreen
+  > "short_name" : ""
+  > "start_url" : "" // when on home-screen, as an icon, what should happen when user taps/touches it.
+  > "scope" : "" // ., ./sub-folder/, etc. here u can make only a part of ur application as a pwa.
+  > "display": "standalone" // default choice. makes it look a native app
+  > "background_color" : "#fff" // bckground when loading splashscreen
+  > "theme_color" : "#3F51B5" // theme color, on top bar in task switcher.
+  > "description" : ""
+  > "dir" : "ltr" // direction: left to right
+  > "lang" : "en-US"
+  > "orientation" : "portrait-primary" // set default orientation, though it affects
+  > "icons" : [...,
+                {
+                  "src": "src/images.../icon-48x48.png",
+                  "type": "image/png",
+                  "sizes" : "48x48"
+                },
+                {
+                  "src": "src/images.../icon-96x96.png",
+                  "type": "image/png",
+                  "sizes" : "96x96"
+                }
+              ]
+  
+---
