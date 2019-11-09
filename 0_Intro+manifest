@@ -47,7 +47,8 @@ below are the key-value pairs of this json obj {}
                 }
               ]
               
-   > "related_applications" : [  // these are native apps !!! vimp !! these are NOT web-apps.
+   > "related_applications" : [  // these are native apps !!! vimp !! these are NOT web-apps. 
+                                 // browser uses it to display msg to user if he wants to use native app/PWA app.
                 {
                   "platform": "play"
                   "url": "https://play.google.com/store/apps/details?id=com.example.app1",
