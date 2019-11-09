@@ -64,6 +64,12 @@ PWAs and browser support
   > "Service Workers": 
 ---
 
-
+> To see our app on a home-screen on the phone, install android studio + any AVD manager + open chrome + goto 10.0.2.2:8080 
+(localhost wont work on the virtual device)
+> click the 3 vertical dots + add to home screen
+> when u click on it, it will launch a "standalone instance with our icon" ; u can very this using the task-switcher on the phone, 
+it will show the chrome version + the standalone version of our app.
 
 ---
+
+
