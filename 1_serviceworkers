@@ -1,0 +1,23 @@
+> Normal javascript code executes on a single thread in the resident html file. If the html file is closed, that code/thread 
+  becomes inactive/ inaccessible.
+> service workers run in a separate thread than other js-code. 
+  >> if initialized in the root index html file, they will be accessible to all application.
+  >> they can then globally listen to events and respond to them
+  >> they run in background
+  >> they are alive even after the browser/app is closed.
+  
+> "Listenable" events of a service worker
+  >> Fetch:- Browser/page-js initiates a fetch (http request). Note that if using libraries like axios, etc., this fetch 
+     would not be initiated; otherwise fetch can be initiated.
+  >> Push Notifications:- Service workers receive Web Push Notifications (from Server). 
+     Server -> Browser Server -> app receives push notification (?)
+  >> Notification Interaction:
+     - user interacts with the notification
+  >> Background Sync:
+     - SW receives Background Sync Event (eg. internet is restored)
+  >> Service Worker Life Cycle
+     - Service Worker live cycle events.
+     
+ ---
+ 
+ 
