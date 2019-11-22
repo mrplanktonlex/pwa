@@ -35,6 +35,13 @@ Registering sw means "app.js tells the browser, do not execute this sw, but mark
   
 ---
 
+http-server -c-1 (DONT use browser cache). 
+
+scripts:{
+  "start": "http-server -c-1"
+}
+
 ---
 
+DONT add sws in js-code folder. Add it in ur root folder.
 ---
