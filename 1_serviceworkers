@@ -45,3 +45,24 @@ scripts:{
 
 DONT add sws in js-code folder. Add it in ur root folder.
 ---
+
+sw.js is created. 
+
+Q.1. How to register the sw ?
+A. 
+>> Add it in app.js file
+if('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js') // register() returns a promise
+                         .then(function(){
+                            console.log('service worker registered');
+                         }) 
+} // if ends
+
+
+---
+
+---
+
+---
+
+---
