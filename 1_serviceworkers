@@ -27,8 +27,12 @@ index.html -> app.js (we can execute code which registers sw.js)
 Registering sw means "app.js tells the browser, do not execute this sw, but mark it as a background process"
 2 things happen during registration:-
 >> installation ==> emits "install" event, can be used to cache assets ,etc. 
+   -- will happen only when atleast 1byte of change is made to sw.js
 >> activation ====> will be activated only if older version of sws are closed. only then, browser emits "activate" event 
-
+  -- once activated, it will go into "idle" mode -> n then -> "terminated" mode.
+  -- terminated mode does not mean that its uninstalled, but its just sleeping, ; it will become active, for eg. if a fetch-event 
+     happens.
+  
 ---
 
 ---
